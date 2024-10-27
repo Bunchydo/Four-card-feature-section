@@ -1,0 +1,178 @@
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-section {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-section h1 {
+  line-height: 50px;
+}
+
+.header-section p {
+  color: hsl(229, 14%, 54%);
+  line-height: 24px;
+  margin-bottom: 44px;
+  font-size: 1.2rem;
+}
+
+.first-h1 {
+  font-size: 30px;
+  font-weight: 100;
+  color: hsl(229, 14%, 54%);
+  margin: 0px;
+  letter-spacing: 0.2rem;
+}
+
+.second-h1 {
+  font-size: 44px;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  margin: 0px;
+}
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 15%;
+  justify-content: center;
+  justify-items: center;
+
+  height: 70%;
+  width: 90vw;
+}
+.supervisor-block {
+  grid-row: 1;
+  grid-column: 1;
+  position: relative;
+  transform: translateY(60%);
+  border-top: 3.5px solid hsl(180, 62%, 55%);
+}
+.karma-block {
+  grid-column: 2;
+  border-top: 3.5px solid hsl(34, 97%, 64%);
+}
+
+.team-bulider-block {
+  grid-column: 2;
+  grid-row: 1;
+  border-top: 3.5px solid hsl(0, 78%, 62%);
+}
+
+.calculator-block {
+  position: relative;
+  transform: translateY(60%);
+  grid-row: 1;
+  border-top: 3.5px solid hsl(212, 86%, 64%);
+}
+.supervisor-block,
+.team-bulider-block,
+.karma-block,
+.calculator-block {
+  width: 94%;
+  height: 27vh;
+
+  background-color: white;
+  box-shadow: 2px 1px 20px 2px hsl(229, 6%, 66%);
+  box-sizing: border-box;
+  padding: 5%;
+
+  border-radius: 10px;
+}
+
+.supervisor-block p,
+.team-bulider-block p,
+.karma-block p,
+.calculator-block p {
+  color: hsl(229, 6%, 66%);
+  line-height: 150%;
+}
+
+.supervisor-block h3,
+.team-bulider-block h3,
+.karma-block h3,
+.calculator-block h3 {
+  font-size: 25px;
+  font-weight: 600px;
+  margin-top: 0px;
+}
+
+.supervisor-block img,
+.team-bulider-block img,
+.karma-block img,
+.calculator-block img {
+  display: flex;
+  justify-self: flex-end;
+}
+
+@media (max-width: 400px) {
+  .grid-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: auto;
+    width: 90vw;
+  }
+
+  .supervisor-block {
+    transform: translateY(0%);
+
+    border-top: 3.5px solid hsl(180, 62%, 55%);
+  }
+
+  .karma-block {
+    border-top: 3.5px solid hsl(34, 97%, 64%);
+  }
+
+  .team-bulider-block {
+    border-top: 3.5px solid hsl(0, 78%, 62%);
+  }
+
+  .calculator-block {
+    border-top: 3.5px solid hsl(212, 86%, 64%);
+    transform: translateY(0%);
+  }
+
+  .supervisor-block,
+  .team-bulider-block,
+  .karma-block,
+  .calculator-block {
+    margin-bottom: 15px; /* Adjust as needed */
+  }
+
+  .first-h1 {
+    font-size: 20.5px;
+    font-weight: 100;
+    color: hsl(229, 14%, 54%);
+    margin: 0px;
+    letter-spacing: 1px;
+  }
+  .second-h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-top: -16px;
+  }
+  .header-section p {
+    color: hsl(229, 14%, 54%);
+    line-height: 25px;
+    margin-bottom: 44px;
+    font-size: 1rem;
+    text-align: center;
+    
+  }
+  .header-section p br{
+    display: none;
+  }
+}
